@@ -80,7 +80,7 @@ body {
     text-align: end;
     border: none;
     background: none;
-    color: rgb(80, 80, 80);
+    color: rgb(40, 40, 40);
 }
 
 .calc-result {
@@ -92,7 +92,7 @@ body {
     background: none;
     font-size: 40px;
     text-align: end;
-    color: rgb(30, 30, 30);
+    color: rgb(10, 10, 10);
     overflow: scroll;
 }
 
@@ -134,7 +134,7 @@ button:nth-child(1), button:nth-child(2), button:nth-child(3) {
 
 button:nth-child(4n), button:nth-child(19) {
     background: orange;
-    background: radial-gradient(at bottom right, rgb(239, 124, 29) 0%, rgb(246, 149, 46) 24%, rgb(220, 102, 23) 70%, rgb(150, 63, 9) 100%);
+    background: radial-gradient(at bottom right, rgb(250, 133, 37) 0%, rgb(246, 149, 46) 24%, rgb(238, 115, 32) 70%, rgb(205, 91, 20) 100%);
     color: white;
 }
 
@@ -156,16 +156,23 @@ button:nth-child(4n), button:nth-child(19) {
 button:hover {
     background: rgba(185, 185, 185, 0.499);
     box-shadow: 0 4px 12px rgb(172, 176, 183);
+
+    width: 60px;
+    height: 60px;
+    margin: 0 2.6px;
+    box-shadow: 0 4px 12px rgb(172, 176, 183);
 }
 button:nth-child(4n):hover, button:nth-child(19):hover {background: rgb(246, 149, 46);}
 
+/*
 button:active {
     width: 60px;
     height: 60px;
     margin: 0 2.6px;
     box-shadow: 0 4px 12px rgb(172, 176, 183);
 }
-.zero:active {
+*/
+.zero:hover {
     width: 131px;
     height: 60px;
 }
