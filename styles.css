@@ -71,7 +71,7 @@ body {
 }
 
 
-.calc-display {
+.calc-request {
     width: 100%;
     height: 10%;
     margin-top: 65px;
@@ -80,7 +80,7 @@ body {
     text-align: end;
     border: none;
     background: none;
-    color: rgb(170, 170, 170);
+    color: rgb(80, 80, 80);
 }
 
 .calc-result {
@@ -92,7 +92,7 @@ body {
     background: none;
     font-size: 40px;
     text-align: end;
-    color: rgb(80, 80, 80);
+    color: rgb(30, 30, 30);
     overflow: scroll;
 }
 
@@ -153,7 +153,10 @@ button:nth-child(4n), button:nth-child(19) {
     filter: blur(1px);
 }
 
-button:hover {background: rgba(200, 200, 200, 0.499);}
+button:hover {
+    background: rgba(185, 185, 185, 0.499);
+    box-shadow: 0 4px 12px rgb(172, 176, 183);
+}
 button:nth-child(4n):hover, button:nth-child(19):hover {background: rgb(246, 149, 46);}
 
 button:active {
