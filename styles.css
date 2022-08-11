@@ -79,7 +79,7 @@ body {
     font-size: 20px;
     text-align: end;
     border: none;
-    background: none;
+    background: white;
     color: rgb(40, 40, 40);
 }
 
@@ -89,7 +89,7 @@ body {
     margin: 1px 0 5px 0;
     padding: 8px;
     border: none;
-    background: none;
+    background: white;
     font-size: 40px;
     text-align: end;
     color: rgb(10, 10, 10);
