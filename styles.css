@@ -1,0 +1,168 @@
+:root {
+    --color: rgb(200, 200, 200);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 24px;
+    font-family: 'DM Sans', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: rgb(226, 232, 241);
+}
+
+.circle-right {
+    position: fixed;
+    top: -125px;
+    right: -125px;
+    width: 400px;
+    height: 400px;
+    border: 15px solid orange;
+    border-radius: 50%;
+    z-index: 0;
+}
+.circle-left {
+    position: fixed;
+    bottom: -75px;
+    left: -75px;
+    width: 200px;
+    height: 200px;
+    border: 10px solid orange;
+    border-radius: 50%;
+    z-index: 0;
+}
+
+
+.calculator {
+    position: relative;
+    width: 300px;
+    height: 550px;
+    padding: 10px;
+    border: none;
+    border-radius: 30px;
+    background: rgb(255, 255, 255);
+    box-shadow: 20px 10px 40px rgb(164, 164, 164);
+    z-index: 10;
+}
+.calculator::after {
+    content: '🔆';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 50px;
+    height: 45px;
+    background: rgb(235, 235, 235);
+    border-top-left-radius: 40%;
+    border-top-right-radius: 40%;
+    border-bottom-right-radius: 40%;
+    border-bottom-left-radius: 2px;
+    font-size: 22px;
+    text-align: center;
+    line-height: 45px;
+}
+
+
+.calc-display {
+    width: 100%;
+    height: 10%;
+    margin-top: 65px;
+    padding: 8px;
+    font-size: 20px;
+    text-align: end;
+    border: none;
+    background: none;
+    color: rgb(170, 170, 170);
+}
+
+.calc-result {
+    width: 100%;
+    height: 10%;
+    margin: 1px 0 5px 0;
+    padding: 8px;
+    border: none;
+    background: none;
+    font-size: 40px;
+    text-align: end;
+    color: rgb(80, 80, 80);
+    overflow: scroll;
+}
+
+button {
+    position: relative;
+    width: 62.2px;
+    height: 62.2px;
+    margin: 3px 1.5px;
+    border: none;
+    border-radius: 18px;
+    box-shadow: 0 4px 12px rgb(201, 206, 213);
+    background: rgb(232,232,232);
+    background: radial-gradient(at bottom right, rgb(240, 240, 240) 0%, rgb(255, 255, 255) 19%, rgb(241, 241, 241) 70%, rgb(215, 215, 215) 100%);
+    transition: width 150ms ease-in-out, height 150ms ease-in-out, margin 150ms ease-in-out, box-shadow 150ms ease-in-out;
+    color: black;
+    overflow: hidden;
+    opacity: 1;
+}
+
+button::after {
+    content: '';
+    pointer-events: none;
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    width: 57px;
+    height: 57px;
+    border: 4px solid white;
+    border-radius: 18px;
+    opacity: 0.35;
+    filter: blur(1px);
+}
+
+button:nth-child(1), button:nth-child(2), button:nth-child(3) {
+    background: rgb(232,232,232);
+    background: radial-gradient(at bottom right, rgb(213, 213, 213) 0%, rgb(217, 217, 217) 20%, rgb(185, 187, 191) 70%, rgb(139, 140, 143) 100%);
+    /*border: 3px solid rgb(225, 225, 225);*/
+}
+
+button:nth-child(4n), button:nth-child(19) {
+    background: orange;
+    background: radial-gradient(at bottom right, rgb(239, 124, 29) 0%, rgb(246, 149, 46) 24%, rgb(220, 102, 23) 70%, rgb(150, 63, 9) 100%);
+    color: white;
+}
+
+.zero {width: 133px;}
+.zero::after {
+    content: '';
+    pointer-events: none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 125px;
+    height: 54px;
+    border: 4px solid white;
+    border-radius: 18px;
+    opacity: 0.35;
+    filter: blur(1px);
+}
+
+button:hover {background: rgba(200, 200, 200, 0.499);}
+button:nth-child(4n):hover, button:nth-child(19):hover {background: rgb(246, 149, 46);}
+
+button:active {
+    width: 60px;
+    height: 60px;
+    margin: 0 2.6px;
+    box-shadow: 0 4px 12px rgb(172, 176, 183);
+}
+.zero:active {
+    width: 131px;
+    height: 60px;
+}

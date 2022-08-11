@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/cc9e69ed66.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="circle-right"></div>
+    <div class="circle-left"></div>
+    <div class="calculator">
+        <input class="calc-display" id="request" type="text" disabled></input>
+        <input class="calc-result" id="result" type="text" disabled></input>
+        <div class="calc-buttons">
+            <button type="submit" value="c"   onclick="clearScreen()"     >C</button>
+            <button type="submit" value="+/-" onclick=""                  >+/-</button>
+            <button type="submit" value="%"   onclick=""                  >%</button>
+            <button type="submit" value="÷"   onclick="display(' / ')"    >÷</button>
+            <button type="submit" value="7"   onclick="display('7')"      >7</button>
+            <button type="submit" value="8"   onclick="display('8')"      >8</button>
+            <button type="submit" value="9"   onclick="display('9')"      >9</button>
+            <button type="submit" value="x"   onclick="display(' * ')"    >×</button>
+            <button type="submit" value="4"   onclick="display('4')"      >4</button>
+            <button type="submit" value="5"   onclick="display('5')"      >5</button>
+            <button type="submit" value="6"   onclick="display('6')"      >6</button>
+            <button type="submit" value="-"   onclick="display(' - ')"    >-</button>
+            <button type="submit" value="1"   onclick="display('1')"      >1</button>
+            <button type="submit" value="2"   onclick="display('2')"      >2</button>
+            <button type="submit" value="3"   onclick="display('3')"      >3</button>
+            <button type="submit" value="+"   onclick="display(' + ')"      >+</button>
+            <button class="zero" type="submit" value="0"   onclick="display('0')"      >0</button>
+            <button type="submit" value="."   onclick=""                  >.</button>
+            <button type="submit" value="="   onclick="calculate()"       >=</button>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
